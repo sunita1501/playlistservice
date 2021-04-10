@@ -1,0 +1,8 @@
+PlayList
+
+.request
+include::{snippets}/playlist/http-request.adoc[]
+
+.response
+include::{snippets}/playlist/http-response.adoc[]
+
