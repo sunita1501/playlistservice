@@ -48,10 +48,16 @@ public class PlayListService {
         //System.out.println(play1[0].name);
         playListRepository.save(new PlayListEntity(playListDTO.name, playListDTO.songs));
 
+
+
     }
 
     /*public void addSongs(PlayListDTO playListDTO) {
         play1.add(playListDTO.songs);
 
     }*/
+
+
+
+
 }
