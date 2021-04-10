@@ -1,10 +1,14 @@
 package com.playlist;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class PlayListDTO {
-    String playlistname;
+    String name;
     String songs;
 
 }
