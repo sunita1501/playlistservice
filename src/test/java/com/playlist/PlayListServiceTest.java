@@ -32,7 +32,7 @@ public class PlayListServiceTest {
 
 
    /* @Test
-    public void gPlayListDBIsEmptyTest() {
+    public void gPlayListDBIsEmptyTest() throws Exception{
 
         //assertNull(service.getPlayList1());
         assertTrue(service.getPlayList1().isEmpty());

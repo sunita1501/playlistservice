@@ -1,4 +1,4 @@
-PlayList
+Playlist
 
 .request
 include::{snippets}/playlist/http-request.adoc[]
