@@ -21,8 +21,8 @@ public class PlayListServiceTest {
     @Test
     public void gPlayListDBIsEmptyTest() {
 
-        assertNull(service.getPlayList1());
-        //assertTrue(service.getPlayList().);
+        //assertNull(service.getPlayList1());
+        assertTrue(service.getPlayList1().isEmpty());
     }
 
 
