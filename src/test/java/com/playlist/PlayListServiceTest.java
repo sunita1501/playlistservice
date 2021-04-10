@@ -35,4 +35,14 @@ public class PlayListServiceTest {
         assertEquals(service.getPlayList1().get(0), "Playlist1");
     }
 
+    @Test
+    public void getMultiplePlayListNames() {
+
+        //service.play1 = "Playlist1";
+        service.play1.add("Playlist1");
+        service.play1.add("Playlist2");
+
+        assertEquals("Playlist1",service.getPlayList1().get(0));
+        assertEquals("Playlist2", service.getPlayList1().get(1));
+    }
 }
