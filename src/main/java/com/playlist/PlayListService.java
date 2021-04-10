@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.System.*;
+
 @Service
 
 public class PlayListService {
@@ -24,7 +26,12 @@ public class PlayListService {
 
         return play1;
     }
+    public void savePlayListDetails(PlayListDTO playListDTO) {
+        play1.add(playListDTO.name);
+        play1.add(playListDTO.songs);
+        //System.out.println(play1[0].name);
 
+    }
 
     public void addSongs(PlayListDTO playListDTO) {
         play1.add(playListDTO.songs);

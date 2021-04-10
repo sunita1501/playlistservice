@@ -39,7 +39,7 @@ public class PlayListControllerTest {
 
     @Test
     void createPlayListTest() throws Exception {
-        PlayListDTO input = new PlayListDTO("PlayList1","");
+        PlayListDTO input = new PlayListDTO("PlayList1","song1");
         mockMvc.perform(
                 post("/playlist")
                         .content(objectMapper.writeValueAsString(input))
@@ -49,8 +49,8 @@ public class PlayListControllerTest {
 
         mockMvc.perform(get("/playlist"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("length()").value(1))
-                .andExpect(jsonPath("[0].name").value("PlayList1"));
-                //.andExpect(jsonPath("[0]").value("Good"));
+                .andExpect(jsonPath("length()").value(2));
+                //.andExpect(jsonPath("[0].name").value("PlayList1"))
+                //.andExpect(jsonPath("[0]).value("song1"));*/
     }
 }
