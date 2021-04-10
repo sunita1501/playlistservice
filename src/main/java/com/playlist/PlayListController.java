@@ -13,7 +13,7 @@ public class PlayListController {
     public PlayListService playlistService;
 
     @GetMapping("playlist")
-    public List<String> fetchList(){
+    public List<PlayListDTO> fetchList(){
         return playlistService.getPlayList1();
 
     }
