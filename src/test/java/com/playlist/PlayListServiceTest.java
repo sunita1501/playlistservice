@@ -52,6 +52,6 @@ public class PlayListServiceTest {
         playListDTO.songs = "song1";
         service.addSongs(playListDTO);
 
-        assertEquals("song1", service.addSongs().get(0));
+        assertEquals("song1", service.getPlayList1().get(0));
     }
 }

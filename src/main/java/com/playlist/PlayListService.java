@@ -21,4 +21,8 @@ public class PlayListService {
     }
 
 
+    public void addSongs(PlayListDTO playListDTO) {
+        play1.add(playListDTO.songs);
+
+    }
 }
