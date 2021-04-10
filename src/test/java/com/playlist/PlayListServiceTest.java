@@ -45,4 +45,13 @@ public class PlayListServiceTest {
         assertEquals("Playlist1",service.getPlayList1().get(0));
         assertEquals("Playlist2", service.getPlayList1().get(1));
     }
+
+    @Test
+    public void addSongsToPlayList(){
+        PlayListDTO playListDTO = new PlayListDTO();
+        playListDTO.songs = "song1";
+        service.addSongs(playListDTO);
+
+        assertEquals("song1", service.addSongs().get(0));
+    }
 }
