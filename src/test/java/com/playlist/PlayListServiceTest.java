@@ -31,12 +31,12 @@ public class PlayListServiceTest {
     }
 
 
-    @Test
+   /* @Test
     public void gPlayListDBIsEmptyTest() {
 
         //assertNull(service.getPlayList1());
         assertTrue(service.getPlayList1().isEmpty());
-    }
+    }*/
 
     /*
     @Test

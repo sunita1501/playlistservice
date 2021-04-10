@@ -27,13 +27,13 @@ public class PlayListControllerTest {
     ObjectMapper objectMapper;
 
 
-    @Test
+    /*@Test
     void fetchEmptyList() throws Exception {
         //VisitorDTO input = new VisitorDTO("Zackry","Good");
         mockMvc.perform(get("/playlist"))
                 .andExpect(status().isOk());
 
-    }
+    }*/
 
     /*When a playlist is created with a name
     Then a confirmation is returned that it was successful.
